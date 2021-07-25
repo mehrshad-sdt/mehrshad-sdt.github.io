@@ -57,7 +57,7 @@
          var vazn = document.querySelector('#vazn').value;
          var result = parseFloat(price) * (parseFloat(lirPrice)) * (0.3);
          result += (vazn * 240);
-         result += price;
+         result += (parseFloat(price) * parseFloat(lirPrice));
          var container = document.getElementById('container');
          var my_html = '<h1>';
          my_html += result
