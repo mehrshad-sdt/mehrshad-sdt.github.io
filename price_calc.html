@@ -36,13 +36,32 @@
         </div>
       </div>
 
+      <button class="btn waves-effect waves-light" type="button" id= "btn">
+          Calculate     
+      </button>
+
+      <div id="container"></div>
 
 
     
     
     <div id="container"></div>
     <script type= "text/javascript" >
-       
+    var button = document.querySelector('#btn');
+    
+    button.addEventListener('click', () => {
+         var price = document.querySelector('#lir').value;
+         var lirPrice = document.querySelector('#lir-rooz').value;
+         var barbari = document.querySelector('#barbari').value;
+         var result = parseFloat(price) * (parseFloat(lirPrice)) * (0.3);
+         result += barbari;
+         var container = document.getElementById('container');
+         var my_html = '<h1>';
+         my_html += result
+         my_html += '</h1>'
+         
+         container.innerHTML = my_html;
+    })
     </script>
     
 </body>

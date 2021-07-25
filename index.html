@@ -31,8 +31,8 @@
          var button = document.querySelector('#btn');
     
         button.addEventListener('click', () => {
-             number = document.querySelector('#num').value;
-             percent = document.querySelector('#perc').value;
+             var number = document.querySelector('#num').value;
+             var percent = document.querySelector('#perc').value;
              console.log(number);
              var result = parseFloat(number) * (parseFloat(percent) / 100)
              var container = document.getElementById('container');
