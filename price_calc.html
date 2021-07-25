@@ -31,10 +31,12 @@
 
       <div class="row">
         <div class="input-field col s6">
-          <input id="barbari" type="number">
-          <label class="active" for="barbari">Barbari</label>
+          <input id="vazn" type="number">
+          <label class="active" for="vazn">Vazn</label>
         </div>
       </div>
+
+      
 
       <button class="btn waves-effect waves-light" type="button" id= "btn">
           Calculate     
@@ -52,9 +54,9 @@
     button.addEventListener('click', () => {
          var price = document.querySelector('#lir').value;
          var lirPrice = document.querySelector('#lir-rooz').value;
-         var barbari = document.querySelector('#barbari').value;
+         var vazn = document.querySelector('#vazn').value;
          var result = parseFloat(price) * (parseFloat(lirPrice)) * (0.3);
-         result += barbari;
+         result += (vazn * 240);
          var container = document.getElementById('container');
          var my_html = '<h1>';
          my_html += result
